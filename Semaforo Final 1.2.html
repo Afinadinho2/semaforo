@@ -1,0 +1,75 @@
+<html>
+    <style>
+        .container {
+            text-align: center;
+            margin: 20px;
+             
+             
+         }
+
+         body {
+         background-color:lightblue;
+         background-image: url("file:///C:/Users/Lenovo/Downloads/Nova%20pasta/background.jpg") ;
+        }
+       
+         img {
+            max-width: 300px;
+            margin: 20px;
+        }
+
+        h1 {
+
+        font-size:  80px;
+        color: white  ;
+    }
+        
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(0, 88, 203);
+            border-radius: 5px
+
+        }
+
+    </style>
+
+<h1 align="center">Semáforo</h1>
+<body>
+    <div class="container">
+        
+        <img style="height:400px; width:520px " id="semaforo" src="file:///C:/Users/Lenovo/Downloads/Nova%20pasta/pngwing.com%20(3).png" >
+        <br>
+        
+        <button onclick="LigarSemaforo()">Ligar</button>
+        <button onclick="Verde()">Verde</button>
+        <button onclick="Amarelo()">Amarelo</button>
+        <button onclick="Desligar()">Desligar</button>
+        
+    </div>
+
+    <script>
+        
+        const imageElement = document.getElementById('semaforo');
+
+        
+        function Amarelo() {
+            imageElement.src = "C:/Users/Lenovo/Downloads/Nova pasta/pngwing.com.png"
+        }
+
+        function LigarSemaforo() {
+            imageElement.src = "C:/Users/Lenovo/Downloads/Nova pasta/pngwing.com (1).png";
+        }
+        
+        function Verde() {
+            imageElement.src = "C:/Users/Lenovo/Downloads/pngwing.com.png";
+        }
+        
+        function Desligar() {
+            imageElement.src = "C:/Users/Lenovo/Downloads/Nova pasta/pngwing.com (3).png";
+        }
+    </script>
+</body>
+</html>
